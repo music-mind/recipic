@@ -1,0 +1,29 @@
+<ion-modal-view class="product edit create" ng-controller="WriteCtrl" style="width: 100%; height: 100%; top: 0%; left: 0%; right: 0%; bottom: 0%;">
+    <form name="writeform" novalidate>
+        <ion-header-bar class="bar-assertive fix-buttons">
+            <a class="button" ng-click="hideWriteModal()">Cancel</a>
+            <h1 class="title">Write</h1>
+        </ion-header-bar>
+
+        <ion-content>
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">TITLE</span>
+                    <input type="text" placeholder="Title" name="title" />
+                </label>
+                <button class="button button-full button-light ion-android-camera" ng-click="attachImage()">
+                </button>
+                <div style="text-align:center">
+                    <img src="{{uploadedImage}}" ng-if="uploadedImage" />
+                </div>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">CONTENT</span>
+                    <textarea placeholder="Content" rows="10" ng-Required="true" name="content"></textarea>
+                </label>
+                <button class="button button-block button-stable" ng-click="saveContent()">
+                    Register
+                </button>
+            </div>
+        </ion-content>
+    </form>
+</ion-modal-view>

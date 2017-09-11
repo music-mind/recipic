@@ -1,0 +1,39 @@
+<ion-view view-title="Recipe Details" ng-controller="ViewCtrl">
+    <ion-content>
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <img src="img/1.jpg">
+                <h2>Chicken Parmesan</h2>
+                <p>April 24, 2017</p>
+            </div>
+
+            <div class="item item-body">
+                <p>
+                    <br>1/2 Cup Chicken</br>
+                    <br>2 Tablespoons Salt</br>
+                    <br>2 1/2 Loaves Pesto</br>
+                    <br>1 Stalk Green Onion</br>
+                    <br>3 Cups Blueberries</br>
+                </p>
+                <p>
+                    <a href="#" class="subdued">1 Like</a>
+                    <a href="#" class="subdued">$1.99 - 200 Coins</a>
+                </p>
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" href="javascript:void(0)" ng-click="doLike()">
+                    <i class="icon ion-thumbsup"></i>
+                    Like
+                </a>
+                <a class="tab-item" href="javascript:void(0)" ng-click="registerBookmark()">
+                    <i class="icon ion-ios-cart"></i>
+                    Buy
+                </a>
+            </div>
+
+        </div>
+    </ion-content>
+
+</ion-view>

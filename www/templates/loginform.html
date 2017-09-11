@@ -1,0 +1,27 @@
+<ion-modal-view class="product edit create" ng-controller="UserCtrl" style="width: 100%; height: 100%; top: 0%; left: 0%; right: 0%; bottom: 0%;">
+    <form name="loginform" novalidate>
+        <ion-header-bar class="bar-assertive fix-buttons">
+            <a class="button" ng-click="hideLoginModal()">Cancel</a>
+            <h1 class="title">Sign In</h1>
+        </ion-header-bar>
+        <ion-content has-bouncing="true">
+            <div class="list">
+                <label class="item item-input item-stacked-label"">
+                <span class="input-label">Email</span>
+                <input name="email" type="email" placeholder="uks@uks.com">
+                </label>
+
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Password</span>
+                    <input name="password" type="password">
+                </label>
+            </div>
+            <button class="button button-block button-stable" ng-click="login()">
+                Sign In
+            </button>
+            <button class="button button-block button-stable" ng-click="showJoinModal()">
+                Sign Up
+            </button>
+        </ion-content>
+    </form>
+</ion-modal-view>

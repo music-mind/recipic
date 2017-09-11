@@ -1,0 +1,39 @@
+<ion-view title="Setting" ng-controller="UserCtrl">
+    <ion-content>
+        <div class="list">
+            <div class="item item-divider" ng-if="isLogined()">
+                Profile
+            </div>
+            <div id="profile-bg" ng-if="isLogined()"></div>
+            <div id="content" ng-if="isLogined()">
+                <!--<div id="profile-info" ng-click="selectImage(true)">-->
+                <div id="profile-info" ng-click="showActionsheet()">
+                    <img id="profile-image" src="img/2.jpg" />
+                </div>
+            </div>
+            <div class="item item-divider">
+                Member
+            </div>
+            <a class="item" ng-if="!isLogined()" ng-click="showLoginModal()">
+                Sign In
+            </a>
+            <a class="item" ng-if="isLogined()" ng-click="logout()">
+                Sign Out
+            </a>
+            <div class="item item-divider">
+                Push Notification
+            </div>
+            <ul class="list">
+                <li class="item item-toggle">
+                    Push
+                    <label class="toggle toggle-positive">
+                        <input type="checkbox">
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+</ion-view>
